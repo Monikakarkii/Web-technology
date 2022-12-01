@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5500/Thomas/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas</title>
+<style>
+    table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+</style><link id="avast_os_ext_custom_font" href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css"></head>
+
+<body>
+    <h1>Thomas J. Watson</h1>
+    <p>Thomas John Watson Jr. (January 14, 1914 – December 31, 1993) was an American businessman, political figure, Army Air Forces pilot, and philanthropist. The son of IBM Corporation founder Thomas J. Watson, he was the second IBM president (1952–71), the 11th national president of the Boy Scouts of America (1964–68), and the 16th United States Ambassador to the Soviet Union (1979–81). He received many honors during his lifetime, including being awarded the Presidential Medal of Freedom by Lyndon B. Johnson in 1964. Fortune called him "the greatest capitalist in history" and Time listed him as one of "100 most influential people of the 20th century".</p>
+    <img src="./Thomas_files/200px-ThomasJWatsonJr.jpg" alt="Error">
+    <li>Early Life</li>
+    <li>Personal life</li>
+    <li>Honors</li>
+    <li>Philanthrophy</li>
+    <table>
+        <tbody><tr>
+          <th>Year</th>
+          <th>Achievements</th>
+        </tr>
+        <tr>
+          <td>1952-1971</td>
+          <td> Second IBM President</td>
+        </tr>
+        <tr>
+          <td>1979-1981</td>
+          <td>US Ambassador</td>
+        </tr>
+      </tbody></table>
+      <li><a href="http://127.0.0.1:5500/Thomas/About%20Thomas">About Thomas</a></li>
+      <li><a href="http://127.0.0.1:5500/Thomas/References">References</a></li>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
